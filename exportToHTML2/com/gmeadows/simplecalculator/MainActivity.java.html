@@ -1,0 +1,163 @@
+<html>
+<head>
+<title>MainActivity.java</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.ln { color: #999999; font-weight: normal; font-style: normal; }
+.s0 { color: rgb(0,0,128); font-weight: bold; }
+.s1 { color: rgb(0,0,0); }
+.s2 { color: rgb(0,128,0); font-weight: bold; }
+.s3 { color: rgb(128,128,128); font-style: italic; }
+.s4 { color: rgb(0,0,255); }
+</style>
+</head>
+<BODY BGCOLOR="#ffffff">
+<TABLE CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#c0c0c0" >
+<TR><TD><CENTER>
+<FONT FACE="Arial, Helvetica" COLOR="#000000">
+MainActivity.java</FONT>
+</center></TD></TR></TABLE>
+<pre>
+<span class="s0">package </span><span class="s1">com.gmeadows.simplecalculator; 
+ 
+</span><span class="s0">import </span><span class="s1">android.support.v4.widget.TextViewCompat; 
+</span><span class="s0">import </span><span class="s1">android.support.v7.app.AppCompatActivity; 
+</span><span class="s0">import </span><span class="s1">android.os.Bundle; 
+</span><span class="s0">import </span><span class="s1">android.view.View; 
+ 
+</span><span class="s0">public class </span><span class="s1">MainActivity </span><span class="s0">extends </span><span class="s1">AppCompatActivity { 
+    </span><span class="s0">public </span><span class="s1">String memory; 
+    @Override 
+    </span><span class="s0">protected void </span><span class="s1">onCreate(Bundle savedInstanceState) { 
+        </span><span class="s0">super</span><span class="s1">.onCreate(savedInstanceState); 
+        setContentView(R.layout.activity_main); 
+        memory = </span><span class="s2">&quot;&quot;</span><span class="s1">; 
+    } 
+    </span><span class="s0">public void </span><span class="s1">pressedSeven(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;7&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedEight(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;8&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedAC(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory = </span><span class="s2">&quot;0&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedOne(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;1&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedTwo(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;2&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedThree(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;3&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedFour(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;4&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedFive(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;5&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedSix(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;6&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedNine(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;9&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s3">//////</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">pressedPlus(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s3">///////</span><span class="s1"> 
+    </span><span class="s0">public void </span><span class="s1">pressedMinus(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;7&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedNegative(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;7&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedPercent(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory = result_text / </span><span class="s4">100</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedDivide(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory = result_text / nextDouble(); 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedMultiply(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory = result_text * nextDouble(); 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedDecimal(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        memory += </span><span class="s2">&quot;.&quot;</span><span class="s1">; 
+        tmp.setText(memory); 
+ 
+    } 
+ 
+    </span><span class="s0">public void </span><span class="s1">pressedEqual(View view) { 
+        TextView tmp = findViewById(R.id.result_text); 
+        tmp.setText(memory); 
+ 
+    } 
+} 
+</span></pre>
+</body>
+</html>
